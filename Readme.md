@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Polina Milekhina](https://up.htmlacademy.ru/htmlcss/27/user/1247199).
-* Наставник: `Неизвестно`.
+* Наставник: [Ксения Торкова].(https://up.htmlacademy.ru/htmlcss/27/user/23249).
 
 ---
 
