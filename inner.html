@@ -9,8 +9,16 @@
 <body>
     <header>
         <a href="catalog.html">
-            <img src="img/logo-header.svg" width="109" height="19" alt="Логотип магазина «Техномарт»">
+            <img src="img/logo-header.svg" width="109" height="19" alt="Логотип магазина «Техномарт», переход на главную страницу">
         </a>
+        <span>
+            <img src="img/bookmark.svg" width="14" height="16" alt="Закладки">
+            Закладки: 0
+        </span>
+        <span>
+            <img src="img/cart.svg" width="16" height="16" alt="Корзина">
+            Корзина: 10
+        </span>
         <button type="button">Оформить заказ</button>
         <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
         <p>
@@ -46,31 +54,57 @@
             <h2>Фильтр товаров</h2>
             <!--Здесь будет форма-->
         </section>
-        <section>
-            <h2>Производители</h2>
-            <ul>
-                <li><img src="img/checkbox-on.svg" alt="Отмечено">Bosch</li>
-                <li><img src="img/checkbox-off.svg" alt="Не отмечено">Интерскол</li>
-                <li><img src="img/checkbox-on.svg" alt="Отмечено">Makita</li>
-                <li><img src="img/checkbox-off.svg" alt="Не отмечено">Dewalt</li>
-                <li><img src="img/checkbox-off.svg" alt="Не отмечено">Hitachi</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Питание</h2>
-            <ul>
-                <li><img src="img/radio-on.svg" alt="Отмечено">Аккумуляторные</li>
-                <li><img src="img/radio-off.svg" alt="Не отмечено">Сетевые</li>
-            </ul>
-        </section>
-        <button type="button">Показать</button>
 
+        <section>
+            <h2 class="visually-hidden">Фильтр товаров</h2>
+            <form method="get" action="#">
+                <fieldset>
+                    <legend>Производители:</legend>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="bosch" id="filter-bosch" checked>
+                            <label for="filter-bosch">Bosch</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="interskol" id="filter-interskol">
+                            <label for="filter-interskol">Интерскол</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="makita" id="filter-makita" checked>
+                            <label for="folter-makita">Makita</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="dewalt" id="filter-dewalt">
+                            <label for="filter-dewalt">Dewalt</label> 
+                        </li>
+                        <li>
+                            <input type="checkbox" name="hitachi" id="filter-hitachi">
+                            <label for="filter-hitachi">Hitachi</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Питание:</legend>
+                    <ul>
+                        <li>
+                            <input type="radio" name="power" value="battery" id="filter-battery">
+                            <label for="filter-battery">Аккумуляторные</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="power" value="net" id="filter-net">
+                            <label for="filter-net">Сетевые</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <button type="submit">Показать</button>
+            </form>
+        </section>
         <section>
             <h2>Список перфораторов</h2>
             <ul>
                 <li>
                     <h3>
-                        <a href="catalog-item.html">
+                        <a href="catalog-item">
                             <span>Перфоратор BOSCH</span>
                             <span>BFG 3000</span>
                         </a>
@@ -174,6 +208,9 @@
                 </li>
             </ul>
         </section>
+        <form action="#" method="GET">
+            <input type="submit" value="Оформить заказ">
+        </form>
     </main>
 
     <footer>

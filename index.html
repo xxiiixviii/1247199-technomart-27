@@ -9,6 +9,20 @@
 <body>
   <header>
     <img src="img/logo-header.svg" width="109" height="19" alt="Логотип магазина «Техномарт»">
+    <form action="#" method="get"> 
+      <img src="img/search.svg" width="17" height="17" alt="Поиск">
+      <label for="search-field">Поиск:
+      <input type="text" name="search" id="search-field">
+      </label>
+    </form>
+    <span>
+      <img src="img/bookmark.svg" width="14" height="16" alt="Закладки">
+      Закладки: 0
+    </span>
+    <span>
+      <img src="img/cart" width="15" height="15" alt="Корзина">
+      Корзина: 0
+    </span>
     <button type="button">Оформить заказ</button>
     <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
     <p>
@@ -70,6 +84,18 @@
         <button type="button">Заблудились? Напишите нам!</button>
       </p>
     </section>
+    <form action="#" method="POST">
+      <label for="name-field">Ваше имя:<br>
+        <input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
+      </label>
+      <label for="mail-field">Ваш e-mail:<br>
+        <input type="text" name="mail" id="mail-field" placeholder="email@example.com">
+      </label>
+      <label for="text-field">Текст письма:<br>
+        <textarea name="text" id="text-field">В свободной форме</textarea>
+      </label>
+      <input type="submit" value="Отправить">
+    </form> 
   </main>
 
   <footer>
