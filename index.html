@@ -12,9 +12,10 @@
       <img src="img/logo.svg" width="109" height="19" alt="Логотип магазина «Техномарт», переход на главную страницу">
     </a>  
     <form action="#" method="get"> 
-      <label for="search-field">Поиск:
-      <input type="text" name="search" id="search-field">
-      </label>
+      <p>
+        <input type="search" name="text" placeholder="Поиск:">
+        <input type="submit">
+        </p>
     </form>
     <span>
       Закладки: 0
@@ -44,7 +45,7 @@
   </header>
   <main>
     <section>
-      <h2>Баннеры</h2>
+      <h2 class="visually-hidden">Баннеры</h2>
       <ul>
         <li>
           <span>Материалы</span>
@@ -69,7 +70,7 @@
       </ul>
     </section>
     <section>
-      <h2>Слайдер</h2>
+      <h2 class="visually-hidden">Слайдер</h2>
       <span>Дрели</span>
       <span>Соседям на радость!</span>
       <a href="inner.html">Открыть каталог</a>
@@ -214,16 +215,19 @@
       </p>
     </section>
     <form action="#" method="POST">
-      <label for="name-field">Ваше имя:<br>
+      <p>
+      <label for="name-field">Ваше имя:</label><br>
         <input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
-      </label>
-      <label for="mail-field">Ваш e-mail:<br>
+      </p>
+      <p>
+      <label for="mail-field">Ваш e-mail:</label><br>
         <input type="text" name="mail" id="mail-field" placeholder="email@example.com">
-      </label>
-      <label for="text-field">Текст письма:<br>
+      </p>
+      <p>
+      <label for="text-field">Текст письма:</label><br>
         <textarea name="text" id="text-field">В свободной форме</textarea>
-      </label>
-      <input type="submit" value="Отправить">
+      </p>
+      <button type="submit">Отправить</button>
     </form> 
   </main>
 
