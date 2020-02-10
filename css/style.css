@@ -269,7 +269,7 @@ background-color: #161d29;
 }
 
 .main-nav {
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   line-height: 18px;
   list-style: none;
   text-decoration: none;
@@ -289,7 +289,7 @@ background-color: #161d29;
 }
 
 .filter-name {
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 30px;
   font-weight: bold;
@@ -329,7 +329,7 @@ background-color: #ffffff;
 }
 
 .catalog-item span {
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 20px;
   font-weight: bold;
