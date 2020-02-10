@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
@@ -15,7 +15,14 @@ a {
 }
 
 .visually-hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .menu {
@@ -94,6 +101,7 @@ a {
 
 .menu .logo-back:hover {
   background-color: #ca2c37;
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
 }
 
 .menu .search:hover,
@@ -123,12 +131,12 @@ background-color: #161d29;
 
 .login-back:hover, 
 .registration-back:hover {
-  color: #ee3643
+  color: #ee3643;
 }
 
 .login-back:focus,
 .registration-back:focus {
-  color: rgba 0 0 0;
+  color: rgba(168, 150, 150, 0.3);
 }
 
 .main-navigation:hover {
@@ -137,7 +145,7 @@ background-color: #161d29;
 
 .main-navigation:focus {
   background-color: #1d2739;
-  color: rgba 255 255 255;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .company-button {
@@ -175,7 +183,7 @@ background-color: #161d29;
 .logo-footer {
   width: 220px;
   height: 68px;
-  box-shadow: inset 0px -5px 0 0 var(--black-24);
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
   background-color: #ee3643;
 }
 
@@ -208,11 +216,11 @@ background-color: #161d29;
 }
 
 .nav-footer:focus {
-  color: rgba 241 245 247;
+  color: rgba(241, 245, 247, 0.5);
 }
 
 .link-footer:focus {
-  color: rgba 255 209 128;
+  color: rgba(255, 209, 128, 0.5);
 }
 
 .social-link:hover {
@@ -237,7 +245,7 @@ background-color: #161d29;
 .user-back {
   background-color: #f4f7f9;
   width: 299px;
-  height: 45px;;
+  height: 45px;
 }
 
 .order,
@@ -252,16 +260,16 @@ background-color: #161d29;
 }
 
 .user-back:focus {
-  color: rgba 0 0 0;
+  color: rgba(0, 0, 0, 0.3)
 }
 
 .order:focus,
 .direct:focus {
-  color: rgba 50 66 92;
+  color: rgba(50, 66, 92, 0.3);
 }
 
 .main-nav {
-  font-family: PTSans;
+  font-family: "PT Sans";
   line-height: 18px;
   list-style: none;
   text-decoration: none;
@@ -276,12 +284,12 @@ background-color: #161d29;
   line-height: 30px;
 }
 
-.filters fieldset{
+.filters fieldset {
   border: none;
 }
 
 .filter-name {
-  font-family: PTSans;
+  font-family: "PT Sans";
   font-size: 17px;
   line-height: 30px;
   font-weight: bold;
@@ -291,11 +299,11 @@ background-color: #161d29;
   list-style: none;
   font-size: 15px;
   line-height: 20px;
-  font-family: PTSans;
+  font-family: "PT Sans";
 }
 
 .filters-input:disabled {
-  color: rgba 0 0 0;
+  color: rgb(0, 0, 0);
 }
 
 .filters-button {
@@ -321,7 +329,7 @@ background-color: #ffffff;
 }
 
 .catalog-item span {
-  font-family: PTSans;;
+  font-family: "PT Sans";
   font-size: 18px;
   line-height: 20px;
   font-weight: bold;
@@ -365,5 +373,5 @@ background-color: #ffffff;
   height: 38px;
   opacity: 0.3;
   border: solid 3px #32425c;
-  color: rgba (50, 66, 92, 0.3);
+  color: rgba(50, 66, 92, 0.3);
 }
