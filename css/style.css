@@ -12,6 +12,7 @@ body {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 .visually-hidden {
@@ -184,11 +185,11 @@ header
   font-size: 17px;
 }
 
-/*
+
 .site-navigation a:hover {
-  background-color: ;
+  background-color: #293449;
 }
-*/
+
 
 .site-navigation a:focus {
   color: rgba(255, 255, 255, 0.5);
@@ -204,7 +205,7 @@ main
 }
 
 .subtitle .text {
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
 }
 
@@ -225,7 +226,7 @@ main
   background-color: #ca2c37;
 }
 
-button:focus {
+.button:focus {
   background-color: #ba2732;
 }
 
@@ -242,7 +243,7 @@ button:focus {
 
 .breadcrumbs a {
   color: #000000;
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
@@ -252,7 +253,7 @@ button:focus {
 }
 
 .filter legend {
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 30px;
 }
@@ -273,7 +274,7 @@ button:focus {
 }
 
 .filter-button {
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   border: solid 1px #e5e5e5;
@@ -289,23 +290,28 @@ button:focus {
   border: solid 1px #e5e5e5;
 }
 
+.catalog-item:hover {
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+  background-color: #ffffff;
+}
+
 .catalog-item-title a {
   color: #000000;
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   line-height: 20px;
   font-weight: bold;
 }
 
 .catalog-item-price {
   color: #999999;
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
 }
 
 .catalog-item-price a {
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   color: #ffffff;
   font-size: 17px;
   line-height: 18px;
