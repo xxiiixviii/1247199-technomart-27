@@ -185,7 +185,6 @@ header
   font-size: 17px;
 }
 
-
 .site-navigation a:hover {
   background-color: #293449;
 }
@@ -204,7 +203,7 @@ main
   line-height: 30px;
 }
 
-.subtitle .text {
+.text {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
 }
@@ -427,4 +426,3 @@ color: #ffd180;
 .social-button:focus {
   background-color: #ee3643;
 }
-
