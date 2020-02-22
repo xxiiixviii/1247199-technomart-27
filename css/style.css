@@ -30,7 +30,7 @@ a {
 header
 */
 
-.header-top {
+.main-header {
   background-color: #293449;
 }
 
@@ -39,11 +39,12 @@ header
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
 }
 
-.search {
-  color: #ffffff;
+.search input {
+  background-color: #293449;
+  border: none;
+  color: #000000;
   font-size: 17px;
   line-height: 18px;
-  background-color: #293449;
 }
 
 .search:hover {
@@ -52,6 +53,17 @@ header
 
 .search:focus {
   background-color: #ffffff;
+}
+
+.search input:focus {
+  background-color: #ffffff;
+}
+
+.search input::placeholder {
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 18px;
+  opacity: 1;
 }
 
 .bookmark {
@@ -132,71 +144,74 @@ header
   border: solid 3px #ffffff;
 }
 
-.user-nav {
-  color: #000000;
-  font-size: 21px;
-  line-height: 21px;
-}
-
-.user-nav:hover {
-  color: #ee3643;
-}
-
-.user-nav:focus {
-  color: rgba(0, 0, 0, 0.3);
-}
-
 .login {
   font-size: 21px;
   line-height: 21px;
   color: #000000;
 }
 
+.login:hover {
+  color: #ee3643;
+}
+
 .login:focus {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.login-nav {
+.user {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.user:focus {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.user-navigation {
   color: #32425c;
   font-size: 16px;
   text-decoration: underline;
 }
 
-.login-nav:hover {
+.user-navigation:hover {
   color: #ee3643;
 }
 
-.login-nav:focus {
+.user-navigation:focus {
   color: rgba(50, 66, 92, 0.3);
 }
 
-.main-navigation {
+.site-navigation {
   box-shadow: inset 0px -5px 0 0 #293449;
   background-color: #32425c;
 }
 
-.site-navigation {
+.site-navigation-list {
   color: #ffffff;
   list-style: none;
 }
 
-.site-navigation a {
+.site-navigation-list a {
   color: #ffffff;
   font-size: 17px;
 }
 
-.site-navigation a:hover {
+.site-navigation-list a:hover {
   background-color: #293449;
 }
 
 
-.site-navigation a:focus {
+.site-navigation-list a:focus {
   color: rgba(255, 255, 255, 0.5);
 }
 
 /*
 main
 */
+
+.grey-background {
+  background-color: #f4f7f9;
+}
 
 .subtitle {
   font-size: 30px;
@@ -356,7 +371,7 @@ background-color: #518534;
 footer
 */
 
-.main-footer {
+.footer {
   background-color: #32425c;
 }
 
@@ -369,51 +384,52 @@ footer
   color: #f1f5f7;
 }
 
-.footer-nav {
+.footer-navigation {
 list-style: none;
 }
 
-.footer-nav .link {
+.footer-navigation .link {
   color: #f1f5f7;
 }
 
-.footer-nav link:hover {
+.footer-navigation link:hover {
   text-decoration: underline;
 }
 
-.footer-nav .link:focus {
+.footer-navigation .link:focus {
   color: rgba(241, 245, 247, 0.5);
   text-decoration: underline;
 }
 
-.footer-nav .link-yellow {
+.footer-navigation .link-yellow {
   color: #ffd180;
 }
 
-.footer-nav .link-yellow:hover {
+.footer-navigation .link-yellow:hover {
   text-decoration: underline;
 }
 
-.lfooter-nav .link-yellow:focus {
+.footer-navigation .link-yellow:focus {
   color: rgba(255, 209, 128, 0.5);
   text-decoration: underline;
 }
 
-.copyright {
+.copyright,
+.feedback {
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
 }
 
-.copyright-link {
+.feedback-link {
 color: #ffd180;
 }
 
-.copyright-link:hover {
+.feedback-link:hover {
   text-decoration: underline;
 }
 
-.copyright-link:focus {
+.feedback-link:focus {
   color: #ee3643;
 }
 
@@ -425,4 +441,93 @@ color: #ffd180;
 .social-button:hover,
 .social-button:focus {
   background-color: #ee3643;
+}
+
+/*
+Сеточные стили
+*/
+
+html,
+body {
+  min-width: 1200px;
+  min-height: 3151px;
+}
+
+.container {
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.grey-background {
+  height: 278px;
+}
+
+.main-navigation {
+  height: 42px;
+}
+
+.site-navigation {
+  width: 940px;
+  height: 60px;
+}
+
+.site-navigation-list {
+  padding-left: 52px;
+  padding-right: 55px;
+  justify-content: space-around;
+}
+
+.logo {
+  width: 220px;
+}
+
+.search {
+  width: 270px;
+}
+
+.bookmark {
+  width: 150px;
+}
+
+.cart {
+  width: 150px;
+}
+
+.order {
+  width: 150px;
+}
+
+.slogan {
+  width: 196px;
+}
+
+.contacts-header {
+  width: 270px;
+}
+
+.contacts-header phone {
+  width: 250px;
+}
+
+.sign-in {
+  width: 121px;
+}
+
+.sign-up {
+  width: 150px;
+}
+
+.user {
+  width: 299px;
+}
+
+.user-navigation {
+  
 }
