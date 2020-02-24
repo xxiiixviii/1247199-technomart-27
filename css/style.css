@@ -39,12 +39,8 @@ header
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
 }
 
-.search input {
+.search {
   background-color: #293449;
-  border: none;
-  color: #000000;
-  font-size: 17px;
-  line-height: 18px;
 }
 
 .search:hover {
@@ -55,8 +51,22 @@ header
   background-color: #ffffff;
 }
 
+.search input {
+  background-color: #293449;
+  border: none;
+}
+
+.search input:hover {
+  background-color: #212a3a;
+  border: none;
+}
+
 .search input:focus {
   background-color: #ffffff;
+  border: none;
+  font-size: 17px;
+  line-height: 18px;
+  color: #000000;
 }
 
 .search input::placeholder {
@@ -132,7 +142,7 @@ header
   font-style: italic;
 }
 
-.contacts {
+.contacts-header {
   color: #32425c;
   font-size: 14px;
 }
@@ -200,7 +210,6 @@ header
   background-color: #293449;
 }
 
-
 .site-navigation-list a:focus {
   color: rgba(255, 255, 255, 0.5);
 }
@@ -216,6 +225,7 @@ main
 .subtitle {
   font-size: 30px;
   line-height: 30px;
+  text-transform: uppercase;
 }
 
 .text {
@@ -234,6 +244,7 @@ main
   font-size: 14px;
   line-height: 18px;
   background-color: #ee3643;
+  text-transform: uppercase;
 }
 
 .button:hover {
@@ -465,6 +476,7 @@ body {
   align-items: flex-start;
 }
 
+/*header*/
 .grey-background {
   height: 278px;
 }
@@ -475,7 +487,7 @@ body {
 
 .site-navigation {
   width: 940px;
-  height: 60px;
+  margin-bottom: 60px;
 }
 
 .site-navigation-list {
@@ -485,10 +497,13 @@ body {
 }
 
 .logo {
-  width: 220px;
+  padding-top: 13px;
+  padding-right: 56px;
+  padding-bottom: 15px;
+  padding-left: 55px;
 }
 
-.search {
+.search input {
   width: 270px;
 }
 
@@ -497,37 +512,112 @@ body {
 }
 
 .cart {
-  width: 150px;
+  padding-top: 14px;
+  padding-right: 31px;
+  padding-bottom: 13px;
+  padding-left: 50px;
 }
 
 .order {
-  width: 150px;
+  padding-top: 14px;
+  padding-right: 22px;
+  padding-bottom: 13px;
+  padding-left: 20px;
 }
 
 .slogan {
   width: 196px;
+  margin-top: 54px;
+  margin-right: 81px;
+  margin-bottom: 44px;
+  margin-left: 52px;
 }
 
 .contacts-header {
-  width: 270px;
+  width: 250px;
+  margin-top: 47px;
+  margin-right: 61px;
+  margin-bottom: 43px;
 }
 
-.contacts-header phone {
-  width: 250px;
+.contacts-header .phone {
+  width: 270px;
+  padding-top: 13px;
+  padding-right: 52px;
+  padding-bottom: 11px;
+  padding-left: 74px;
 }
 
 .sign-in {
   width: 121px;
+  background-color: #ffffff;
+  margin-top: 46px;
+  margin-bottom: 67px;
 }
 
 .sign-up {
   width: 150px;
+  background-color: #ffffff;
+  margin-top: 46px;
+  margin-bottom: 67px;
 }
 
 .user {
   width: 299px;
+  background-color: #ffffff;
 }
 
-.user-navigation {
-  
+.orders {
+  width: 75px;
+  margin-right: 32px;
 }
+
+.account {
+  width: 104px;
+}
+
+/*main*/
+
+.info {
+  width: 519px;
+  margin-right: 120px;
+}
+
+.info .text {
+  margin-bottom: 36px;
+}
+
+.main-contacts {
+  width: 300px;
+}
+
+.main-contacts .text {
+  width: 179px;
+  margin-bottom: 36px;
+}
+
+.info .button {
+  padding-top: 14px;
+  padding-right: 40px;
+  padding-bottom: 12px;
+  padding-left: 41px;
+}
+
+.main-contacts .button {
+  padding-top: 14px;
+  padding-right: 59px;
+  padding-bottom: 12px;
+  padding-left: 63px;
+}
+
+.info .subtitle {
+  margin-top: 82px;
+}
+
+.info .paragraph {
+  width: 386px;
+}
+.main-contacts .subtitle {
+  margin-top: 82px;
+}
+
