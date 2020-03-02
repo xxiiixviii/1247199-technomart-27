@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -147,24 +146,27 @@ header
   font-size: 14px;
 }
 
-.contacts-header .phone {
+.phone {
   color: #e9292a;
   font-size: 21px;
   line-height: 21px;
   border: solid 3px #ffffff;
 }
 
-.login {
+.sign-in,
+.sign-up {
   font-size: 21px;
   line-height: 21px;
   color: #000000;
 }
 
-.login:hover {
+.sign-in,
+.sign-up:hover {
   color: #ee3643;
 }
 
-.login:focus {
+.sign-in,
+.sign-up:focus {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -208,10 +210,18 @@ header
 
 .site-navigation-list a:hover {
   background-color: #293449;
+  padding-top: 20px;
+  padding-right: 25px;
+  padding-bottom: 20px;
+  padding-left: 25px;
 }
 
 .site-navigation-list a:focus {
   color: rgba(255, 255, 255, 0.5);
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
 }
 
 /*
@@ -388,7 +398,20 @@ footer
 
 .footer-social {
   background-color: #293449;
+}
+
+.social {
   list-style: none;
+}
+
+.social-button {
+  background-color: #212a3a;
+  border-radius: 50px;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: #ee3643;
 }
 
 .footer-contacts {
@@ -396,33 +419,32 @@ footer
 }
 
 .footer-navigation {
-list-style: none;
+  list-style: none;
 }
 
-.footer-navigation .link {
+.footer-navigation .white-link {
   color: #f1f5f7;
 }
 
-.footer-navigation link:hover {
+.footer-navigation .white-link:hover {
   text-decoration: underline;
 }
 
-.footer-navigation .link:focus {
+.footer-navigation .white-link:focus {
   color: rgba(241, 245, 247, 0.5);
   text-decoration: underline;
 }
 
-.footer-navigation .link-yellow {
+.footer-navigation .yellow-link {
   color: #ffd180;
 }
 
-.footer-navigation .link-yellow:hover {
+.footer-navigation .yellow-link:hover {
   text-decoration: underline;
 }
 
-.footer-navigation .link-yellow:focus {
+.footer-navigation .yellow-link:focus {
   color: rgba(255, 209, 128, 0.5);
-  text-decoration: underline;
 }
 
 .copyright,
@@ -444,16 +466,6 @@ color: #ffd180;
   color: #ee3643;
 }
 
-.social-button {
-  background-color: #212a3a;
-  border-radius: 50px;
-}
-
-.social-button:hover,
-.social-button:focus {
-  background-color: #ee3643;
-}
-
 /*
 Сеточные стили
 */
@@ -461,7 +473,7 @@ color: #ffd180;
 html,
 body {
   min-width: 1200px;
-  min-height: 3151px;
+  box-sizing: border-box;
 }
 
 .container {
@@ -497,59 +509,80 @@ body {
 }
 
 .logo {
+  width: 220px;
   padding-top: 13px;
   padding-right: 56px;
-  padding-bottom: 15px;
+  padding-bottom: 12px;
   padding-left: 55px;
+  box-sizing: border-box;
 }
 
-.search input {
+.search-form {
   width: 270px;
+  padding-left: 17px;
+  box-sizing: border-box;
 }
+
+.search {
+  padding-left: 32px;
+} 
 
 .bookmark {
   width: 150px;
+  padding-top: 12px;
+  padding-right: 10px;
+  padding-bottom: 12px;
+  padding-left: 44px;
+  box-sizing: border-box;
 }
 
 .cart {
-  padding-top: 14px;
-  padding-right: 31px;
-  padding-bottom: 13px;
+  width: 150px;
+  padding-top: 12px;
+  padding-right: 10px;
+  padding-bottom: 12px;
   padding-left: 50px;
+  box-sizing: border-box;
 }
 
 .order {
-  padding-top: 14px;
-  padding-right: 22px;
-  padding-bottom: 13px;
+  width: 150px;
+  padding-top: 12px;
+  padding-right: 20px;
+  padding-bottom: 12px;
   padding-left: 20px;
+  box-sizing: border-box;
 }
 
 .slogan {
   width: 196px;
-  margin-top: 54px;
+  margin-top: 49px;
   margin-right: 81px;
   margin-bottom: 44px;
   margin-left: 52px;
 }
 
-.contacts-header {
-  width: 250px;
-  margin-top: 47px;
-  margin-right: 61px;
-  margin-bottom: 43px;
-}
-
-.contacts-header .phone {
-  width: 270px;
+.phone {
   padding-top: 13px;
   padding-right: 52px;
   padding-bottom: 11px;
   padding-left: 74px;
 }
 
+.contacts-header {
+  margin: 0px;
+  width: 270px;
+  margin-top: 59px;
+  margin-bottom: 44px;
+}
+
 .sign-in {
   width: 121px;
+  padding-top: 14px;
+  padding-right: 27px;
+  padding-bottom: 11px;
+  padding-left: 48px;
+  margin-right: 10px;
   background-color: #ffffff;
   margin-top: 46px;
   margin-bottom: 67px;
@@ -557,6 +590,10 @@ body {
 
 .sign-up {
   width: 150px;
+  padding-top: 14px;
+  padding-right: 25px;
+  padding-bottom: 11px;
+  padding-left: 25px;
   background-color: #ffffff;
   margin-top: 46px;
   margin-bottom: 67px;
@@ -565,15 +602,22 @@ body {
 .user {
   width: 299px;
   background-color: #ffffff;
+  padding-top: 14px;
+  padding-right: 69px;
+  padding-bottom: 11px;
+  padding-left: 47px;
+  box-sizing: border-box;
 }
 
 .orders {
   width: 75px;
   margin-right: 32px;
+  margin-top: 10px;
 }
 
 .account {
   width: 104px;
+  margin-top: 10px;
 }
 
 /*main*/
@@ -587,6 +631,14 @@ body {
   margin-bottom: 36px;
 }
 
+.info .list {
+  margin: 0px;
+  margin-bottom: 37px;
+}
+.list .li:nth-child(-n+2) {
+  color: #5fbb2d;
+}
+
 .main-contacts {
   width: 300px;
 }
@@ -597,6 +649,7 @@ body {
 }
 
 .info .button {
+  width: 220px;
   padding-top: 14px;
   padding-right: 40px;
   padding-bottom: 12px;
@@ -604,20 +657,109 @@ body {
 }
 
 .main-contacts .button {
+  width: 300px;
   padding-top: 14px;
   padding-right: 59px;
   padding-bottom: 12px;
   padding-left: 63px;
+  margin-top: 40px;
 }
 
-.info .subtitle {
-  margin-top: 82px;
+.contacts-map {
+  margin: 0px;
+  margin-bottom: 86px;
 }
 
-.info .paragraph {
-  width: 386px;
+.map {
+  margin-bottom: 40px;
 }
-.main-contacts .subtitle {
-  margin-top: 82px;
+
+.title {
+  margin-top: 67px;
 }
+
+.desc {
+  margin-bottom: 73px;
+}
+
+/*footer*/
+
+.logo-big {
+  width: 220px;
+  padding-top: 20px;
+  padding-right: 41px;
+  padding-bottom: 25px;
+  padding-left: 41px;
+  margin-right: 166px;
+  box-sizing: border-box;
+}
+
+.footer-navigation {
+  margin: 0px;
+  padding: 0px;
+}
+
+.social-button {
+  width: 42px;
+}
+
+.social {
+  margin-right: 119px;
+  margin-top: 35px;
+  margin-bottom: 30px;
+}
+
+.facebook {
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.mail {
+  width: 135px;
+  margin-right: 53px;
+  margin-top: 40px;
+  margin-bottom: 35px;
+}
+
+.site {
+  width: 96px;
+  margin-top: 39px;
+  margin-bottom: 34px;
+}
+
+.footer-contacts {
+  width: 322px;
+  margin-top: 0px;
+  margin-right: 91px;
+  margin-bottom: 53px;
+}
+
+.white-list {
+  margin-top: 42px;
+}
+
+.yellow-list {
+  margin-top: 45px;
+}
+
+.white-list li:nth-child(-n+4) {
+  margin-right: 60px;
+}
+
+.yellow-list li:nth-child(-n+3) {
+  margin-right: 60px;
+}
+
+.footer-contacts {
+  margin-top: 45px;
+}
+
+.copyright {
+  width: 228px;
+  margin-right: 161px;
+  margin-top: 39px;
+  margin-bottom: 35px;
+}
+
+
 
