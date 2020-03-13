@@ -70,9 +70,11 @@ header
 
 .search input::placeholder {
   color: #ffffff;
-  font-size: 17px;
-  line-height: 18px;
   opacity: 1;
+}
+
+.search input:focus::placeholder {
+  color: #000000;
 }
 
 .bookmark {
@@ -390,6 +392,19 @@ footer
   justify-content: center;
 }
 
+.social li {
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.social li:first-child {
+  margin-left: 0;
+}
+
+.social li:last-child {
+  margin-right: 0;
+}
+
 .social-button:hover,
 .social-button:focus {
   background-color: #ee3643;
@@ -544,7 +559,7 @@ box-sizing: inherit;
 .bookmark {
   width: 150px;
   padding-top: 12px;
-  padding-right: 10px;
+  padding-right: 5px;
   padding-bottom: 12px;
   padding-left: 44px;
   position: relative;
@@ -566,7 +581,7 @@ box-sizing: inherit;
 .cart {
   width: 150px;
   padding-top: 12px;
-  padding-right: 10px;
+  padding-right: 5px;
   padding-bottom: 12px;
   padding-left: 50px;
   position: relative;
@@ -802,7 +817,6 @@ box-sizing: inherit;
   background-color: #f2f6f8;
   padding-top: 32px;
   padding-bottom: 34px;
-  padding-right: auto;
   padding-left: 30px;
 }
 
@@ -835,10 +849,7 @@ box-sizing: inherit;
   border: 1px solid #ccc;
 }
 
-.price {
-  margin-top: 18px;
-  margin-bottom: 21px;
-}
+
 
 .catalog-item:nth-child(3n) {
   margin-right: 0;
@@ -904,7 +915,7 @@ box-sizing: inherit;
 
 .catalog-item-buy {
   background-color: #63a63e;
-  border-bottom-color: 3px solid #367315;
+  box-shadow: inset 0px -3px 0 0 #367315;
   padding: 14px 45px;
   color: #ffffff;
   position: relative;
@@ -1011,7 +1022,7 @@ box-sizing: inherit;
   margin-bottom: 20px;
 }
 
-.popular-list li:nth-child(n) {
+.popular-list li {
   margin-right: 20px;
 }
 
@@ -1055,25 +1066,12 @@ box-sizing: inherit;
 
 .social {
   margin-top: 35px;
-  margin-right: 126px;
+  margin-right: 90px;
   margin-bottom: 30px;
-  margin-left: 127px;
+  margin-left: 100px;
   list-style: none;
-}
-
-.vkontakte {
-  margin-left:0;
-  margin-right: 3px;
-}
-
-.facebook {
-  margin-left: 3px;
-  margin-right: 3px;
-}
-
-.instgram {
-  margin-left: 3px;
-  margin-right: 0;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .mail {
@@ -1104,7 +1102,7 @@ box-sizing: inherit;
   margin-top: 45px;
 }
 
-.white-list li:nth-child(n) {
+.white-list li {
   margin-right: 60px;
 }
 
@@ -1112,7 +1110,7 @@ box-sizing: inherit;
   margin-right: 0;
 }
 
-.yellow-list li:nth-child(n) {
+.yellow-list li {
   margin-right: 60px;
 }
 
