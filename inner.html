@@ -11,7 +11,7 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<div>
     <header class="main-header">
         <section class="main-navigation">
             <div class="container flex">
@@ -37,7 +37,7 @@
             </div>
         </section>
 
-        <section class="grey-background">
+        <section>
             <div class="container flex">
                 <h1 class="slogan">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</h1>
                 <p class="contacts-header">
@@ -69,9 +69,9 @@
 
     <div class="container">
     <ul class="breadcrumbs flex">
-        <li><a href="inner.html">Каталог</a></li>
-        <li><a href="tool.html">Инструмент</a></li>
-        <li>Перфораторы</li>
+        <li class="catalog"><a href="inner.html">Каталог</a></li>
+        <li class="tool"><a href="tool.html">Инструмент</a></li>
+        <li class="category">Перфораторы</li>
     </ul>
    
     <h2 class="category-title">Перфораторы</h2>
@@ -80,38 +80,38 @@
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form action="https://echo.htmlacademy.ru" method="get">
             <fieldset>
-                <legend>Производители:</legend>
-                <ul>
-                    <li>
+                <legend class="producer-filter">Производители:</legend>
+                <ul class="producer-filter-list">
+                    <li class="producer">
                         <input class="filter-input" type="checkbox" name="bosch" id="filter-bosch" checked>
                         <label for="filter-bosch">Bosch</label>
                     </li>
-                    <li>
+                    <li class="producer">
                         <input class="filter-input" type="checkbox" name="interskol" id="filter-interskol">
                         <label for="filter-interskol">Интерскол</label>
                     </li>
-                    <li>
+                    <li class="producer">
                         <input class="filter-input" type="checkbox" name="makita" id="filter-makita" checked>
                         <label for="filter-makita">Makita</label>
                     </li>
-                    <li>
+                    <li class="producer">
                         <input class="filter-input" type="checkbox" name="dewalt" id="filter-dewalt">
                         <label for="filter-dewalt">Dewalt</label>
                     </li>
-                    <li>
+                    <li class="producer">
                         <input class="filter-input" type="checkbox" name="hitachi" id="filter-hitachi">
                         <label for="filter-hitachi">Hitachi</label>
                     </li>
                 </ul>
             </fieldset>
             <fieldset>
-                <legend>Питание:</legend>
-                <ul>
-                    <li>
-                        <input class="filter-input" type="radio" name="power" value="battery" id="filter-battery">
+                <legend class="net-filter">Питание:</legend>
+                <ul class="net-filter-list">
+                    <li class="net">
+                        <input class="filter-input" type="radio" name="power" value="battery" id="filter-battery" checked>
                         <label for="filter-battery">Аккумуляторные</label>
                     </li>
-                    <li>
+                    <li class="net">
                         <input class="filter-input" type="radio" name="power" value="net" id="filter-net">
                         <label for="filter-net">Сетевые</label>
                     </li>
@@ -284,21 +284,22 @@
                 <p class="catalog-item-new">Новинка</p>
             </li>
         </ul>
+        <div class="page-number">
         <a href="#">1</a>
         <a href="#">2</a>
         <a href="#">3</a>
-        <a href="#">Следующая</a>
+        <a class="next" href="#">Следующая</a>
+        </div>
     </section>
-
-</div>
     </div>
 
-    <section class="grey-background">
-        <div class="container flex">
-            <h2 class="subtitle title">Пара слов о перфораторах</h2>
-            <p class="text desc">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и
+    <section class="item-info">
+        <div class="container-flex">
+            <h2 class="subtitle">Пара слов о перфораторах</h2>
+            <p class="text">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и
                 долбления
-                отверстий в кирпиче, бетоне и камне.Существуют электромеханические и пневматические перфораторы.
+                отверстий в кирпиче, бетоне и камне.
+                Существуют электромеханические и пневматические перфораторы.
                 Современные модели
                 могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор
                 «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
@@ -309,7 +310,7 @@
     <footer>
         <div class="main-footer">
             <div class="footer">
-                <div class="container flex">
+                   <div class="container flex">
                     <div class="container flex">
                         <a href="index.html" class="logo logo-big">
                             <img src="img/logo.svg" width="138" height="23" alt="Логотип магазина «Техномарт»">
