@@ -480,13 +480,13 @@ color: rgba(0, 0, 0, 0.3);
 main
 */
 
-.catalog {
+.banners {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.catalog li {
+.banners li {
   width: 300px;
   font-size: 24px;
   line-height: 30px;
@@ -495,40 +495,13 @@ main
   margin-bottom: 20px;
 }
 
-.catalog a {
+.banners a {
   width: 135px;
   padding-top: 14px;
   padding-right: 37px;
   padding-bottom: 14px;
   padding-left: 37px;
   border-radius: 3px;
-}
-
-.catalog span {
-  margin-top: 26px;
-  margin-right: auto;
-  margin-bottom: 15px;
-  margin-left: 23px;
-}
-
-.catalog-materials {
-  background-color: #ffbf47;
-}
-
-.catalog-tools {
-  background-color: #3bbce3;
-}
-
-.catalog-technique {
-  background-color: #dc91d8;
-}
-
-.catalog-discount {
-  background-color: #8ed78f;
-}
-
-.catalog-delivery {
-  background-color: #ffc047;
 }
 
 .info {
@@ -685,6 +658,13 @@ main
   top: 2px;
 }
 
+hr {
+  width: 220px;
+  opacity: 0.3;
+  margin-top: 21px;
+  margin-bottom: 25px;
+}
+
 .filter {
   width: 220px;
   margin-right: 20px;
@@ -700,10 +680,6 @@ main
   border: none;
   padding: 0;
   margin: 0;
-}
-
-.filter fieldset:first-child {
-  margin-bottom: 50px;
 }
 
 .producer-filter,
@@ -810,6 +786,69 @@ main
   padding-left: 35px;
   text-transform: uppercase;
   margin-top: 80px;
+}
+
+.catalog-filter {
+  width: 700px;
+  background-color: #f7f3ec;
+}
+
+.catalog-filter .sorting,
+.catalog-filter .sorting-type  {
+  margin: 0;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding-top: 15px;
+  padding-right: 139px;
+  padding-left: 20px; 
+  padding-bottom: 15px;
+}
+
+.catalog-filter .sorting-type {
+  opacity: 0.18;
+  text-decoration: underline;
+  text-decoration-color: #ee3643;
+  padding-right: 60px;
+}
+
+.catalog-filter .sorting-type:hover,
+.catalog-filter .sorting-type:focus {
+  opacity: 1;
+}
+
+.catalog-filter .sorting-type:active {
+  color: #ee3643;
+  text-decoration: none;
+}
+
+.catalog-filter {
+  position: relative;
+}
+
+.catalog-filter::after {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 10px;
+  background-image: url(../img/icon-down-dir.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  left: 670px;
+  top: 15px;
+}
+
+.catalog-filter::before {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 10px;
+  background-image: url(../img/icon-up-dir.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;  
+  left: 650px;
+  top: 15px;
 }
 
 .catalog-list {
