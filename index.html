@@ -67,32 +67,40 @@
     <div class="container flex">
       <section class="container">
         <h2 class="visually-hidden">Баннеры</h2>
-        <ul class="banners flex">
-          <li>
+        <ul class="promo-block">
+          <li class="promo-block-1">
             <span>Материалы</span>
             <a href="#">на любой вкус</a>
           </li>
-          <li>
+          <li class="promo-block-2">
             <span>Инструмент</span>
             <a href="#">на все случаи жизни</a>
           </li>
-          <li>
+          <li class="promo-block-3">
             <span>Техника</span>
             <a href="#">для стройки</a>
           </li>
-          <li>
+          <li class="promo-block-4">
             <span>Скидки 50%</span>
             <a href="#">на 300 товаров</a>
-          <li>
+          <li class="promo-block-5">
             <span>Доставка</span>
             <a href="#">бесплатно</a>
           </li>
         </ul>
       </section>
-      <section class="slider">
+      <section class="promo-slider promo-slider-1">
         <h2 class="visually-hidden">Слайдер</h2>
-        <span>Дрели</span>
-        <span>Соседям на радость!</span>
+        <span class="promo-slider-title">Дрели</span>
+        <span class="promo-slider-text">Соседям на радость!</span>
+        <a href="inner.html">Открыть каталог</a>
+        <button type="button"><span class="visually-hidden">Вперед</span></button>
+        <button type="button"><span class="visually-hidden">Назад</span></button>
+      </section>
+      <section class="promo-slider promo-slider-2">
+        <h2 class="visually-hidden">Слайдер</h2>
+        <span class="promo-slider-title">Перфораторы</span>
+        <span class="promo-slider-text">Настоящие мужские игрушки</span>
         <a href="inner.html">Открыть каталог</a>
         <button type="button"><span class="visually-hidden">Вперед</span></button>
         <button type="button"><span class="visually-hidden">Назад</span></button>
@@ -226,20 +234,20 @@
       </ul>
     </section>
 
-    <div class="container delivery-info">
+    <div class="container sliders-info">
       <section class="service">
         <h2 class="subtitle">Сервисы</h2>
         <p class="text">Хороший интернет-магазин отличается от плохого не только ценами!
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
         </p>
       </section>
-      <section class="delivery-button flex">
-        <div class="flex sliders">
-        <button type="button">Доставка</button>
+      <section class="sliders-button flex">
+        <div class="sliders flex">
+        <button type="button" class="current">Доставка</button>
         <button type="button">Гарантия</button>
         <button type="button">Кредит</button>
       </div>
-       <div class="flex delivery-slider">
+       <div class="slider-1 flex">
         <h2 class="subtitle">Доставка</h2>
         <p class="text">Мы с удовольствием доставим вам товар прямо<br>
           к вашему подъезду совершенно бесплатно!<br>
@@ -247,6 +255,29 @@
           поднимая его на ваш этаж!
         </p>
       </div>
+      <div class="sliders flex visually-hidden">
+        <button type="button">Доставка</button>
+        <button type="button" class="current">Гарантия</button>
+        <button type="button">Кредит</button>
+      </div>
+       <div class="slider-2 flex visually-hidden">
+        <h2 class="subtitle">Гарантия</h2>
+        <p class="text">Если купленный у нас товар поломается или заискрит, 
+          а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. 
+          Дом уж восстановите как-нибудь сами.
+        </p>
+      </div>
+      <div class="sliders flex visually-hidden">
+        <button type="button">Доставка</button>
+        <button type="button">Гарантия</button>
+        <button type="button" class="current">Кредит</button>
+      </div>
+      <div class="slider-3 flex visually-hidden">
+        <h2 class="subtitle">Кредит</h2>
+        <p class="text">Залезть в долговую яму стало проще! 
+          Кредитные консультанты придут вам на помощь.
+        </p>
+        <button type="submit" class="slider-button-submit">Отправить заявку</button>
       </section>
     </div>
 
