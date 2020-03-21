@@ -46,7 +46,7 @@
                 </p>
                 <div class="flex user-navigation">
                 <a href="#" class="user">Равшан Джамшутович</a>
-                <a href="#">
+                <a class="logout" href="#">
                     <span class="visually-hidden">Выход</span>
                 </a>
                 <a href="#" class="orders">Мои заказы</a>
@@ -80,6 +80,17 @@
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <p class="sorting-filter">Фильтр:</p>
         <p class="price-filter">Цена:</p>
+        <div class="range-filter">
+            <div class="range-controls">
+                <div class="scale"><div class="bar"></div></div>
+            </div>
+            <div class="price-controls">
+                <input class="min-price" type="text" value="0">
+                <span>—</span>
+                <input class="max-price" type="text" value="30 000">
+            </div>
+        </div>
+        <hr>
         <form action="https://echo.htmlacademy.ru" method="get">
             <fieldset>
                 <legend class="producer-filter">Производители:</legend>
@@ -127,9 +138,15 @@
     <section class="catalog">
         <div class="catalog-filter flex">
             <p class="sorting">Сортировка:</p>
-            <p class="sorting-type">По цене</p>
-            <p class="sorting-type">По типу</p>
-            <p class="sorting-type">По функционалу</p>
+            <a href="#" class="sorting-type"><span>По цене</span></a>
+            <a href="#" class="sorting-type"><span>По типу</span></a>
+            <a href="#" class="sorting-type"><span>По функционалу</span></a>
+            <a class="sorting-icon-up sorting-icon-current" href="#">
+                <span class="visually-hidden">По возрастанию</span>
+            </a>
+            <a class="sorting-icon-down" href="#">
+                <span class="visually-hidden">По убыванию</span>
+            </a>
         </div>
         <h2 class="visually-hidden">Список перфораторов</h2>
         <ul class="catalog-list flex">
@@ -309,7 +326,7 @@
             <h2 class="subtitle">Пара слов о перфораторах</h2>
             <p class="text">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и
                 долбления
-                отверстий в кирпиче, бетоне и камне.
+                отверстий в кирпиче, бетоне и камне.<br>
                 Существуют электромеханические и пневматические перфораторы.
                 Современные модели
                 могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор
@@ -324,7 +341,7 @@
           <div class="footer">
             <div class="container flex">
               <div class="container flex">
-                <a href="index.html" class="logo logo-big">
+                <a href="index.html" class="logo-big">
                   <img src="img/logo.svg" width="138" height="23" alt="Логотип магазина «Техномарт»">
                 </a>
                 <ul class="footer-navigation flex white-list">
