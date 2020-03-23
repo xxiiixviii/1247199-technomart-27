@@ -73,36 +73,41 @@
         </div>
         <div class="promo-block promo-block-2">
           <span>Инструмент</span>
-          <a href="#">на все случаи жизни</a>
+          <a href="#">на все случаи</a>
         </div>
         <div class="promo-slider flex">
           <h2 class="visually-hidden">Слайдер</h2>
-          <span class="promo-slider-title">Дрели</span>
-          <span class="promo-slider-text">Соседям на радость!</span>
-          <button type="button"><img src="img/icon-left.svg" width="22" height="40"><span class="visually-hidden">Вперед</span></button>
-          <button type="button"><img src="img/icon-right.svg" width="22" height="40"><span class="visually-hidden">Назад</span></button>
+          <div class="slider-content-1">
+            <span class="promo-slider-title">Дрели</span>
+            <span class="promo-slider-text">Соседям на радость!</span>
+          </div>
+          <div class="slider-content-2">
+            <span class="promo-slider-title">Перфораторы</span>
+            <span class="promo-slider-text">Настоящие мужские игрушки</span>
+          </div>
+          <button class="button-left" type="button"><img src="img/icon-left.svg" width="22" height="40" alt="Листать влево"><span class="visually-hidden">Вперед</span></button>
+          <button class="button-right" type="button"><img src="img/icon-right.svg" width="22" height="40" alt="Листать вправо"><span class="visually-hidden">Назад</span></button>
+          <div class="slider-controls">
+            <label>Первый</label>
+            <label>Второй</label>
+          </div>
           <a href="inner.html">Открыть каталог</a>
-          <div class="slider-content">
-            <img src="img/slider-image.png" width="620" height="266" alt="Слайдер с дрелью">
-          </div>
-          <div class="slider-content">
-            <img src="img/slider-image-2.jpg" width="620" height="266" alt="Слайдер с перфоратором">
-          </div>
         </div>
       </section>
       <section class="flex promo-section-block">
+        <h2 class="visually-hidden">Баннеры</h2>
         <div class="promo-block promo-block-3">
           <span>Техника</span>
           <a href="#">для стройки</a>
         </div>
         <div class="promo-block promo-block-4">
           <span>Скидки 50%</span>
-          <a href="#">на 300 товаров</a>
+          <a href="#">на 350 товаров</a>
         </div>
         <div class="promo-block promo-block-5">
           <span>Доставка</span>
           <a href="#">бесплатно</a>
-          </dv>
+        </div>
       </section>
     </div>
   </div>
@@ -255,11 +260,6 @@
           поднимая его на ваш этаж!
         </p>
       </div>
-      <div class="sliders flex">
-        <button type="button">Доставка</button>
-        <button type="button" class="current">Гарантия</button>
-        <button type="button">Кредит</button>
-      </div>
       <div class="slider-2 flex">
         <h2 class="subtitle">Гарантия</h2>
         <p class="text">Если купленный у нас товар поломается или заискрит,<br>
@@ -268,17 +268,13 @@
           Дом уж восстановите как-нибудь сами.
         </p>
       </div>
-      <div class="sliders flex">
-        <button type="button">Доставка</button>
-        <button type="button">Гарантия</button>
-        <button type="button" class="current">Кредит</button>
-      </div>
       <div class="slider-3 flex">
         <h2 class="subtitle">Кредит</h2>
         <p class="text">Залезть в долговую яму стало проще!
           Кредитные консультанты придут вам на помощь.
         </p>
-        <button type="submit" class="slider-button-submit">Отправить заявку</button>
+        <a href="#" class="slider-button-submit">Отправить заявку</a>
+    </div>
     </section>
   </div>
 
@@ -286,8 +282,8 @@
     <section class="info">
       <h2 class="subtitle">Компания «Техномарт»</h2>
       <p class="text">Настоящий мужской шоппинт начинается здесь! Огромный выбор товаров для ремонта и
-        строительства не оставит равнодушным любителей сэкономить на гастарбайтерах.</p>
-      <p class="text">Мы можем доставить ваш товар в самые отдаленные точки России!
+        строительства не оставит равнодушным любителей сэкономить на гастарбайтерах.
+      <p class="text">Мы можем доставить ваш товар в самые отдаленные точки России!<br>
         Техномарт работает со многими транспортными компаниями:</p>
       <ul class="list">
         <li>Деловые линии</li>
@@ -302,7 +298,7 @@
         заехав в наш офис:
       </p>
       <p class="contacts-map">
-        <img class="map" src="img/map.png" width="300" height="158"
+        <img class="map" src="img/map.jpg" width="300" height="158"
           alt="Офис компании по адресу ул.Б.Конюшенная, д.19/8">
         <a href="#" class="button">Заблудились? Напишите нам!</a>
       </p>
