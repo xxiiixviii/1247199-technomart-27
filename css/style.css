@@ -597,9 +597,8 @@ main
   padding-left: 45px;
   border-radius: 3px;
   position: absolute;
-  margin-top: 205px;
-  margin-left: 25px;
-  margin-bottom: 23px;
+  top: 205px;
+  left: 23px;
  }
 
 .promo-slider a:hover,
@@ -619,8 +618,8 @@ main
   position: absolute;
   width: 22px;
   height: 40px;
-  margin-top: 110px;
-  margin-left: 20px;
+  top: 110px;
+  left: 20px;
   background-color: transparent;
   border: none;
   background-image: url("../img/icon-left.svg");
@@ -630,8 +629,8 @@ main
   position: absolute;
   width: 22px;
   height: 40px;
-  margin-left: 575px;
-  margin-top: 110px;
+  top: 110px;
+  right: 20px;
   background-color: transparent;
   border: none;
   background-image: url("../img/icon-right.svg");
@@ -837,10 +836,17 @@ main
   margin-bottom: 30px;
 }
 
+.info .text-2 {
+  margin-bottom: 0;
+  margin-bottom: 18px;
+}
+
 .info .list {
   font-size: 18px;
   line-height: 20px;
   list-style: none;
+  margin: 0px;
+  margin-bottom: 37px;
 }
 
 .info .button {
@@ -853,14 +859,9 @@ main
   text-align: center;
 }
 
-.info .list {
-  margin: 0px;
-  margin-bottom: 37px;
-}
-
 .list li {
   position: relative;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .list li::before {
@@ -871,8 +872,8 @@ main
   background-color: #ee3643;
   background-position: 0 0;
   background-repeat: no-repeat;
-  left: -30px;
-  top: 7px;
+  left: -37px;
+  top: 10px;
 }
 
 .main-contacts {
@@ -1682,7 +1683,7 @@ background-color: #f9f5f0;
   list-style: none;
   align-items: stretch;
   padding: 0;
-  margin-bottom: 60px;
+  margin-bottom: 55px;
 }
 
 .producer-list li {
@@ -1918,7 +1919,7 @@ footer
 
 .social {
   margin-top: 30px;
-  margin-right: 80px;
+  margin-right: 65px;
   margin-bottom: 30px;
   margin-left: 110px;
   list-style: none;
@@ -2002,20 +2003,20 @@ color: #ffd180;
 .mail {
   width: 135px;
   margin-right: 53px;
-  margin-top: 30px;
+  margin-top: 35px;
   margin-bottom: 35px;
 }
 
 .site {
   width: 96px;
-  margin-top: 30px;
-  margin-bottom: 34px;
+  margin-top: 35px;
+  margin-bottom: 35px;
 }
 
 .footer-contacts {
-  width: 322px;
+  width: 332px;
   margin-top: 25px;
-  margin-right: 91px;
+  margin-right: 79px;
   margin-bottom: 51px;
   color: #f1f5f7;
 }
@@ -2062,12 +2063,13 @@ color: #ffd180;
   width: 340px;
   color: #000000;
   font-family: "Cuprum", "Arial", sans-serif;
-  font-size: 14px;
+  font-weight: 400;
+  font-size: 30px;
   line-height: 30px;
-  margin-top: 68px;
+  margin-top: 65px;
   margin-right: 120px;
   margin-bottom: 68px;
-  margin-left: 160px;
+  margin-left: 180px;
 }
 
 .add-item::before {
@@ -2076,7 +2078,7 @@ color: #ffd180;
   height: 66px;
   position: absolute;
   top: 48px;
-  left: 60px;
+  left: 80px;
   background-image: url("../img/modal-check.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -2105,16 +2107,18 @@ color: #ffd180;
   color: #ffffff;
   text-transform: uppercase;
   background-color: #ee3643;
-  padding-top: 14px;
-  padding-right: 43px;
-  padding-bottom: 12px;
-  padding-left: 44px;
+  padding-top: 10px;
+  padding-right: 59px;
+  padding-bottom: 10px;
+  padding-left: 59px;
   margin-top: 37px;
   margin-right: 20px;
   margin-left: 80px;
   margin-bottom: 37px;
   text-align: center;
   border-radius: 3px;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .add-item-button-continue {
@@ -2123,19 +2127,21 @@ color: #ffd180;
   background-color: #ffffff;
   border: 0;
   padding: 0;
-  padding-top: 14px;
+  padding-top: 10px;
   padding-right: 20px;
-  padding-bottom: 12px;
+  padding-bottom: 10px;
   padding-left: 20px;
   margin-top: 37px;
-  margin-right: 80px;
+  margin-right: 60px;
   margin-bottom: 37px;
   text-align: center;
   border-radius: 3px;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .appointment {
-
+  display: none;
   width: 620px;
   border-top: 7px solid #ee3643;
   box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
@@ -2171,16 +2177,20 @@ color: #ffd180;
   line-height: 18px;
   color: #000000;
   border: 2px solid #c5c5c5;
-  margin-top: 13px;
+  margin-top: 10px;
   border-radius: 3px;
+  padding-left: 10px;
+  padding-top: 5px;
 }
 
 .appointment input {
   width: 220px;
   min-height: 38px;
-  margin-top: 13px;
+  margin-top: 5px;
   border: 2px solid #c5c5c5;
   border-radius: 3px;
+  padding: 0;
+  padding-left: 10px;
 }
 
 .appointment input:hover {
@@ -2194,7 +2204,7 @@ color: #ffd180;
 .appointment-item {
   width: 220px;
   margin: 0;
-  margin-top: 81px;
+  margin-top: 50px;
 }
 
 .appointment-item-name {
@@ -2210,7 +2220,7 @@ color: #ffd180;
 .appointment-text {
   margin-top: 0;
   margin-right: 80px;
-  margin-bottom: 37px;
+  margin-bottom: 34px;
   margin-left: 80px;
 }
 
@@ -2222,13 +2232,13 @@ color: #ffd180;
   width: 460px;
   background-color: #ee3643;
   box-sizing: border-box;
-  padding-top: 14px;
+  padding-top: 10px;
   padding-right: 199px;
-  padding-bottom: 14px;
+  padding-bottom: 10px;
   padding-left: 199px;
-  margin-top: 37px;
+  margin-top: 34px;
   margin-right: 80px;
-  margin-bottom: 37px;
+  margin-bottom: 34px;
   margin-left: 80px;
   border: none;
   border-radius: 3px;
